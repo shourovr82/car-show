@@ -3,6 +3,8 @@ import { Canvas } from '@react-three/fiber';
 import React, { Suspense } from 'react';
 import './style.css';
 import Ground from './Design/Ground';
+import { Car } from './Design/Car';
+import Rings from './Design/Rings';
 
 function CarShow() {
   return (
@@ -15,6 +17,10 @@ function CarShow() {
       {/* Let color = new Color (0,0,0); */}
 
       <color args={[0, 0, 0]} attach='background' />
+
+
+      <Car />
+      <Rings />
 
       <spotLight
         color={[1, 0.25, 0.7]}
